@@ -5,6 +5,7 @@ import os
 from flask import jsonify, Flask, request
 from dotenv import load_dotenv
 from backend_epithet_generator.helpers import Vocabulary, EpithetGenerator
+import random
 
 app = Flask(__name__)
 path = os.path.abspath(".env")
@@ -30,4 +31,11 @@ def vocabulary():
 def epithets(qty):
     epithets = e_gen.get_epithets(int(qty))
     dict_ = {"epithets": epithets}
+    return jsonify(dict_)
+
+@app.route('/randomquantity')
+def randomquantity():
+    qty = random.randint(1,101)
+    epithest = e_gen.get_epithets(qty)
+    dict_ = {"epithets": epithest}
     return jsonify(dict_)
