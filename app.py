@@ -4,7 +4,7 @@ __author__ = "jayaimzzz"
 import os 
 from flask import jsonify, Flask, request
 from dotenv import load_dotenv
-from .helpers import Vocabulary, EpithetGenerator
+from backend_epithet_generator.helpers import Vocabulary, EpithetGenerator
 
 app = Flask(__name__)
 path = os.path.abspath(".env")

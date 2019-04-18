@@ -1,4 +1,4 @@
-from helpers import Vocabulary, EpithetGenerator
+from backend_epithet_generator.helpers import Vocabulary, EpithetGenerator
 import os
 import pytest
 
