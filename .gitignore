@@ -28,9 +28,6 @@ coverage.xml
 instance/
 .webassets-cache
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
 # pyenv
 .python-version
 
