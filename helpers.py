@@ -44,9 +44,9 @@ class EpithetGenerator:
         Usage:
             epithet = generator.get_random_words()
         """
-        random_word_1 = random.choice(self.vocab.get('Column 1'))
-        random_word_2 = random.choice(self.vocab.get('Column 2'))
-        random_word_3 = random.choice(self.vocab.get('Column 3'))
+        random_word_1 = random.choice(self.vocab['Column 1'])
+        random_word_2 = random.choice(self.vocab['Column 2'])
+        random_word_3 = random.choice(self.vocab['Column 3'])
         return (f'{random_word_1} {random_word_2} {random_word_3}')
 
     def get_epithets(self, qty=1):
