@@ -23,5 +23,5 @@ def index():
 
 @app.route('/vocabulary')
 def vocabulary():
-    dict_ = {"vocabulary": {}}
+    dict_ = {"vocabulary": e_gen.vocab}
     return jsonify(dict_)
