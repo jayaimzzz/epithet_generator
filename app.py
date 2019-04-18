@@ -2,7 +2,7 @@
 __author__ = "jayaimzzz"
 
 import os 
-from flask import jsonify, Flask 
+from flask import jsonify, Flask, request
 from dotenv import load_dotenv
 from .helpers import Vocabulary, EpithetGenerator
 
@@ -24,4 +24,10 @@ def index():
 @app.route('/vocabulary')
 def vocabulary():
     dict_ = {"vocabulary": e_gen.vocab}
+    return jsonify(dict_)
+
+@app.route('/epithets/<qty>')
+def epithets(qty):
+    epithets = e_gen.get_epithets(int(qty))
+    dict_ = {"epithets": epithets}
     return jsonify(dict_)
