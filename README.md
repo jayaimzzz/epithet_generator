@@ -26,16 +26,16 @@ This is a Flask API to serve random epithets from the [Shakespeare Insult Kit](h
 
 ## Using the API's endpoints
     
-    * GET '/'
+* GET '/'
     Returns one epithet
 
-    * GET '/vocabulary'
+* GET '/vocabulary'
     Returns the vocab used to generate the epithets
 
-    * GET '/epithets/QTY
+* GET '/epithets/QTY
     Returns a defined quantity of epithets
     args:
         QTY (integer): quantity of epithets desired
 
-    * GET '/randomquantity'
-    Returns a random quantity of epithets
+* GET '/randomquantity'
+    Returns a random quantity of epithets (between 1 - 100)
