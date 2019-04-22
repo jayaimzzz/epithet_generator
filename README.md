@@ -21,7 +21,7 @@ This is a Flask API to serve random epithets from the [Shakespeare Insult Kit](h
     ```
 * Run the API
     ```
-    flask run
+    $ flask run
     ```
 
 ## Using the API's endpoints
