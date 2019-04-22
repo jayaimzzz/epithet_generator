@@ -1,13 +1,36 @@
 # Epithet Generator
 
-Create a Flask API to serve random epithets from the [Shakespeare Insult Kit](http://www.pangloss.com/seidel/shake_rule.html).
-Each sprint is an assignment with its own deliverables. Please create a pull request to the appropriate branch to submit
-assignments.
+This is a Flask API to serve random epithets from the [Shakespeare Insult Kit](http://www.pangloss.com/seidel/shake_rule.html).
 
-## Instructions
+## Running the API locally
 
-Sprint|Description
----|---
-[a](https://github.com/KenzieAcademy/backend-epithet-generator/blob/master/instructions/sprint_a.md)|minimal flask applications
-[b](https://github.com/KenzieAcademy/backend-epithet-generator/blob/sprint-b/instructions/sprint_b.md) |unit testing
-[c](https://github.com/KenzieAcademy/backend-epithet-generator/blob/sprint-c/instructions/sprint_c.md) |integration testing
+* Git clone this repo to your PC and CD into the project dir
+
+* Install the dependencies
+    ```
+    $pipenv install
+    ```
+
+* Start a PIPENV shell
+    ```
+    $ pipenv shell
+    ```
+* Run the tests
+    ```
+    $ pytest
+    ```
+
+## Using the API's endpoints
+    
+    * GET '/'
+    Returns one epithet
+
+    * GET '/vocabulary'
+    Returns the vocab used to generate the epithets
+
+    * GET '/epithets/QTY
+    Returns a defined quantity of epithets
+    args:
+
+    * GET '/randomquantity'
+    Returns a random quantity of epithets
