@@ -19,6 +19,10 @@ This is a Flask API to serve random epithets from the [Shakespeare Insult Kit](h
     ```
     $ pytest
     ```
+* Run the API
+    ```
+    flask run
+    ```
 
 ## Using the API's endpoints
     
@@ -31,6 +35,7 @@ This is a Flask API to serve random epithets from the [Shakespeare Insult Kit](h
     * GET '/epithets/QTY
     Returns a defined quantity of epithets
     args:
+        QTY (integer): quantity of epithets desired
 
     * GET '/randomquantity'
     Returns a random quantity of epithets
